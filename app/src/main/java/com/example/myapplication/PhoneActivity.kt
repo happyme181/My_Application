@@ -20,7 +20,6 @@ class PhoneActivity : AppCompatActivity() {
 
         dialButton.setOnClickListener {
             val intent : Intent = Intent (Intent.ACTION_DIAL)
-            intent.setData (uri.parse("tel" + phoneNumber.text.toString()))
             startActivity(intent)
         }
 
